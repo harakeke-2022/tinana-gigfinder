@@ -21,7 +21,7 @@
   "homepage": "https://github.com/harakeke-2022/tinana-gigfinder#readme",
   "dependencies": {
     "express": "^4.17.2",
-    "express-handlebars": "^6.0.2",
+    "express-handlebars": "^5.2.1",
     "handlebars": "^4.7.7",
     "knex": "^0.95.2",
     "sqlite3": "^5.0.2"
