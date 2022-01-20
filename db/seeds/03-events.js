@@ -5,9 +5,7 @@ exports.seed = function(knex) {
     .then(function () {
       // Inserts seed entries
       return knex('events').insert([
-        {id: 1, venue_id: 1, name: 'name', day: 'Friday', description: 'good band', band_id: 1, time: "11:40pm",  featured: true },
-        {id: 2, colName: 'rowValue2'},
-        {id: 3, colName: 'rowValue3'}
+        {id: 1, venue_id: 1, name: '1991 Tour in New Zealand', day: 'Friday', description: 'excellents event much wows', band_id: 1, time: "8:00pm",  featured: true }
       ]);
     });
 };
