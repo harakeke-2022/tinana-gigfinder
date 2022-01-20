@@ -22,7 +22,7 @@ server.set('view engine', 'hbs')
 
 // Define the routes
 server.get('/', (req, res) => {
-   res.send('Hello World')// Homepage 
+   res.render('cityLanding')// Homepage 
 })
 
 // Change these to our routes
