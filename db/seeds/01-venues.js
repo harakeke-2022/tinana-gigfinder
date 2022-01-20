@@ -5,9 +5,7 @@ exports.seed = function(knex) {
     .then(function () {
       // Inserts seed entries
       return knex('venues').insert([
-        {id: 1, name: 'rowValue1', location: 's', city: 'd'},
-        {id: 2, colName: 'rowValue2'},
-        {id: 3, colName: 'rowValue3'}
+        {id: 1, name: 'Pointers', location: '2 Lower Hobson Street, Auckland CBD', city: 'Auckland'}
       ]);
     });
 };
