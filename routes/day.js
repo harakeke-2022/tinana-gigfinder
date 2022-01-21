@@ -1,4 +1,5 @@
 const express = require('express')
+const db = require('../db/db')
 
 const router = express.Router()
 module.exports = router
@@ -6,16 +7,20 @@ module.exports = router
 
 
 // GET Event for the city by the day
-router.get('/:city/:day', (req,res) => {
+router.get('/:city/:day', async (req,res) => {
    const day = req.params.day
    const city = req.params.city
 
-   const template = ''
+   const events = await db.selectByCityAndDay(city, day)
+
+  
    const viewData = {
-    // Data goes here
+    events: events
    }
 
-   res.render(template, viewData)
+   console.log(viewData)
+
+   res.render('cityLanding', viewData)
 })
 
 // GET Event for the city by the day
