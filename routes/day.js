@@ -11,7 +11,7 @@ router.get('/:city/:day', async (req,res) => {
    const day = req.params.day
    const city = req.params.city
 
-   const events = await db.selectByCityAndDay(city, day)
+   const events = await db.selectByCityAndDay()
 
   
    const viewData = {
