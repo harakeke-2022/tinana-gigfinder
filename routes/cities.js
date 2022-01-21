@@ -12,7 +12,7 @@ const viewData = {
   events: all
 }
 
-console.log(viewData)
+
 
 res.render('cityLanding', viewData)
 
