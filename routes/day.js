@@ -3,9 +3,12 @@ const express = require('express')
 const router = express.Router()
 module.exports = router
 
+
+
 // GET Event for the city by the day
-router.get('/auckland/:day', (req,res) => {
+router.get('/:city/:day', (req,res) => {
    const day = req.params.day
+   const city = req.params.city
 
    const template = ''
    const viewData = {

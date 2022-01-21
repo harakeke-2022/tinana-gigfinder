@@ -22,10 +22,10 @@ server.set('view engine', 'hbs')
 
 // Define the routes
 server.get('/', (req, res) => {
-   res.render('cityLanding')// Homepage 
+   res.render('landingPage')// Homepage 
 })
 
 // Change these to our routes
-server.use('/:city', cityRoutes)
+server.use('/', cityRoutes)
 // server.use('/schedule', scheduleRoutes)
 // server.use('/events', eventRoutes)
