@@ -6,41 +6,20 @@
 
 
 <title>What's on in {{city}}</title>
-
-<div>
-
-
-{{!-- 
-  <img class = "feature-image" src="{{image}}" alt="Feature band for the day"> --}}
-
-</div>
-
 <div>
     <h1>
     <nav class = "navigation">
     <section class = "container">
   {{!-- <ul class = "navigation-list float-right"> --}}
 {{#each events}}
+ <p>{{city}}</p>
     <li class = "navigation-item">Event name: {{eventName}}</li>
     <li class = "navigation-item">Time: {{time}}</li>
     <li class = "navigation-item">Venue: {{venueName}}</li>
     <li>Description: {{description}}</li>
-    {{city}}
+   
 </ul>
 {{/each}}
 </section>
 </nav>
 </div></h1>
-
-{{!-- 
-  <nav class="navigation">
-            <section class="container">
-               <a class="navigation-title" href="/">
-                  <h1 class="title">Site Title</h1>
-               </a>
-               <ul class="">
-                  <li class=""><a class="navigation-link" href="/list">Sites</a></li>
-                  <li class="navigation-item"><a class="navigation-link" href="/login">Login</a></li>
-               </ul>
-            </section>
-         </nav> --}}

@@ -23,3 +23,22 @@ img {
   font-size: 10px;
   color: beige;
 }
+
+.nav-selected {
+  font-size: 50px;
+font-style: oblique;
+color: rgb(46, 11, 41);
+}
+
+li {
+  font-size: 50px;
+font-style: oblique;
+color: rgb(46, 11, 41);
+}
+
+p {
+  font-size: 100px;
+font-style: bold;
+
+
+}
