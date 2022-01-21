@@ -1,7 +1,6 @@
-// this is where we would land after click into a city
-{{!-- /*{{> locationsNav}}*? --}}
+{{> lineUpNavCity}}
 
-<h2 class="page-header">Locations:</h2>
+<h1>Locations:</h1>
 
 <div class = "feature">
     {{#each events}}
@@ -9,7 +8,7 @@
     {{/each}}
 </div>
 
-<div class="locations-section">
+<div class="container">
 {{#each events}}
   <div class="locations-item">
     <a href="/events/{{id}}" class="locations-item-name">{{name}}</a>
