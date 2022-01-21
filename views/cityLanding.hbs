@@ -1,27 +1,21 @@
+
 // this is where we would land after click into a city
-{{!-- /*{{> locationsNav}}*? --}}
+<title>{{city}}</title>
 
-<h2 class="page-header">Locations:</h2>
+{{> lineUpNavDay}}
 
-<div class = "feature">
-    {{#each events}}
-//if {{feature}} == TRUE then display
-    {{/each}}
+<div>
+  <img  class = "feature-image" src="{{image}}" alt="Feature band for the day">
 </div>
 
-<div class="locations-section">
+<div>
+  <ul class = "text">
 {{#each events}}
-  <div class="locations-item">
-    <a href="/events/{{id}}" class="locations-item-name">{{name}}</a>
-    <p class="text-gray-500">{{description}}</p>
-    <p class="hello">{{day}}</p>
-    <p class="hello">{{time}}</p>
-    <p class="hello">{{date}}</p>
-
-/// need if statement for if featured then....
-    <p class="hello"> {{feature}}</p>
-
-    {{!-- <span class="locations-edit-link"><a href="/locations/{{id}}/edit">Edit Location</a></span> --}}
-  </div>
+<li>Event name: {{eventsName}}</li>
+<li>Time: {{time}}</li>
+<li>Venue: {{venuesName}}</li>
+<li>Description: {{eventDescription}}</li>
+</ul>
 {{/each}}
+
 </div>
