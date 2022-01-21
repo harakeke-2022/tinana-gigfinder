@@ -4,7 +4,7 @@ const express = require('express')
 const hbs = require('express-handlebars')
 
 // Changes these to our routes
-const cityRoutes = require('./routes/cities.js')
+const cityRoutes = require('./routes/day.js')
 // const scheduleRoutes = require('./routes/schedule.js')
 // const eventRoutes = require('./routes/events.js')
 
