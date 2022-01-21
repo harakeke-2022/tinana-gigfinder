@@ -7,12 +7,12 @@ function getAll(db = database) {
 }
 
 // Select events by city and day
-function selectByCityAndDay(day, db = database){
+function selectByCityAndDay(city, day, db = database){
       return db('events')
         .join('venues','venues.id','events.venue_id')
         .where({
-          day: day
-          
+          day: day,
+          city: city
         })
         .select(
           'venues.id as venuesId',
