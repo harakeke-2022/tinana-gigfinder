@@ -26,6 +26,6 @@ server.get('/', (req, res) => {
 })
 
 // Change these to our routes
-server.use('/:city', cityRoutes)
+server.use('/', cityRoutes)
 // server.use('/schedule', scheduleRoutes)
 // server.use('/events', eventRoutes)
