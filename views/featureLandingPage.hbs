@@ -1,0 +1,11 @@
+  <title>GigFinder</title>
+
+{{> lineUpNavCity}}
+
+<div>
+  <h1 class = "main-title">Feature Event: {{eventName}}</h1>
+        {{#if isFeatured}}
+  <img class = "feature-image" src="{{image}}" alt="Feature Band Image">
+  <p class ="text">{{bandDescription}}</p>
+      {{/if}}
+</div>
